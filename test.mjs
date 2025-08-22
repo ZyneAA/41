@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://192.168.99.193:8888");
+const socket = io(YOUR_HOST_AND_PORT_HERE);
 
 socket.emit("generate", { prompt: "41", model: "deepseek-r1:7b" });
 
