@@ -16,7 +16,7 @@ def register_event(socketio):
         #
         #
 
-        for _ in range(1, 100):
+        for _ in range(1, 1000):
             emit("token", generate_char())
 
         emit("end", {"status": "done"})
